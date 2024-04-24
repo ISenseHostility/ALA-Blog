@@ -1,0 +1,86 @@
+.header-main{
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    opacity: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    align-self: center;
+    padding-right: 60px;
+}
+
+.navbar{
+    width: fit-content;
+    height: 100%;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline;
+    float: left;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: var(--site-color-01-hover);
+}
+
+.winkelmand{
+    width: fit-content;
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.winkelmand-icon{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/winkelmand-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winkelmand-icon:hover{
+    background-image: url(../img/winkelmand-black.png);
+}
+
+.winkelmand-avatar{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/avatar-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winkelmand-avatar:hover{
+    background-image: url(../img/avatar-black.png);
+}
