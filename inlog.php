@@ -78,54 +78,54 @@ if (isset($_POST['submit'])) {
         <?php } else { ?>
 
             <section class="columns">
-                <form class="column is-6" action="" method="post">
+                <form class="column1" action="" method="post">
 
-                    <div class="field is-horizontal">
-                        <div class="field-label is-normal">
+                    <div class="field">
+                        <div class="field-label">
                             <label class="label" for="email">Email</label>
                         </div>
                         <div class="field-body">
                             <div class="field">
-                                <div class="control has-icons-left">
+                                <div class="control">
                                     <input class="input" id="email" type="text" name="email" value="<?= $email ?? '' ?>" />
-                                    <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                    <span class="icon"><i class="fas"></i></span>
                                 </div>
-                                <p class="help is-danger">
+                                <p class="help">
                                     <?= $errors['email'] ?? '' ?>
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="field is-horizontal">
-                        <div class="field-label is-normal">
+                    <div class="field">
+                        <div class="field-label">
                             <label class="label" for="password">Password</label>
                         </div>
                         <div class="field-body">
                             <div class="field">
-                                <div class="control has-icons-left">
+                                <div class="control">
                                     <input class="input" id="password" type="password" name="password"/>
-                                    <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+                                    <span class="icon"><i class="fas"></i></span>
 
                                     <?php if(isset($errors['loginFailed'])) { ?>
-                                        <div class="notification is-danger">
+                                        <div class="notification">
                                             <button class="delete"></button>
                                             <?=$errors['loginFailed']?>
                                         </div>
                                     <?php } ?>
 
                                 </div>
-                                <p class="help is-danger">
+                                <p class="help">
                                     <?= $errors['password'] ?? '' ?>
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="field is-horizontal">
-                        <div class="field-label is-normal"></div>
+                    <div class="field">
+                        <div class="field-label"></div>
                         <div class="field-body">
-                            <button class="button is-link is-fullwidth" type="submit" name="submit">Log in With Email</button>
+                            <button class="button" type="submit" name="submit">Log in With Email</button>
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@ if (isset($_POST['submit'])) {
         <?php } ?>
 
     </div>
-    <a class="button mt-4" href="index.php">&laquo; Go back to home</a>
-    <a class="button mt-4" href="register.php">&laquo; Register</a>
+    <a class="button" href="index.php">&laquo; Go back to home</a>
+    <a class="button" href="register.php">&laquo; Register</a>
 </section>
 </html>

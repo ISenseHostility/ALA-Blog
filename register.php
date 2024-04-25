@@ -61,20 +61,20 @@ if(isset($_POST['submit'])) {
         <h2 class="title">Register With Email</h2>
 
         <section class="columns">
-            <form class="column is-6" action="" method="post">
+            <form class="column1" action="" method="post">
 
                 <!-- Name -->
-                <div class="field is-horizontal">
+                <div class="field">
                     <div class="field-label is-normal">
                         <label class="label" for="name">Name</label>
                     </div>
                     <div class="field-body">
                         <div class="field">
-                            <div class="control has-icons-left">
+                            <div class="control">
                                 <input class="input" id="name" type="text" name="name" value="<?= $name ?? '' ?>" />
-                                <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                <span class="icon"><i class="fas"></i></span>
                             </div>
-                            <p class="help is-danger">
+                            <p class="help">
                                 <?= $errors['name'] ?? '' ?>
                             </p>
                         </div>
@@ -82,17 +82,17 @@ if(isset($_POST['submit'])) {
                 </div>
 
                 <!-- Email -->
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
+                <div class="field">
+                    <div class="field-label">
                         <label class="label" for="email">Email</label>
                     </div>
                     <div class="field-body">
                         <div class="field">
-                            <div class="control has-icons-left">
+                            <div class="control">
                                 <input class="input" id="email" type="text" name="email" value="<?= $email ?? '' ?>" />
-                                <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                <span class="icon"><i class="fas"></i></span>
                             </div>
-                            <p class="help is-danger">
+                            <p class="help">
                                 <?= $errors['email'] ?? '' ?>
                             </p>
                         </div>
@@ -100,17 +100,17 @@ if(isset($_POST['submit'])) {
                 </div>
 
                 <!-- Password -->
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
+                <div class="field">
+                    <div class="field-label">
                         <label class="label" for="password">Password</label>
                     </div>
                     <div class="field-body">
                         <div class="field">
-                            <div class="control has-icons-left">
+                            <div class="control">
                                 <input class="input" id="password" type="password" name="password"/>
-                                <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+                                <span class="icon"><i class="fas"></i></span>
                             </div>
-                            <p class="help is-danger">
+                            <p class="help">
                                 <?= $errors['password'] ?? '' ?>
                             </p>
                         </div>
@@ -118,10 +118,10 @@ if(isset($_POST['submit'])) {
                 </div>
 
                 <!-- Submit -->
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal"></div>
+                <div class="field">
+                    <div class="field-label"></div>
                     <div class="field-body">
-                        <button class="button is-link is-fullwidth" type="submit" name="submit">Register</button>
+                        <button class="button" type="submit" name="submit">Register</button>
                     </div>
                 </div>
 
@@ -130,6 +130,6 @@ if(isset($_POST['submit'])) {
 
     </div>
 </section>
-<a class="button mt-4" href="index.php">&laquo; Go back to home</a>
+<a class="button" href="index.php">&laquo; Go back to home</a>
 </body>
 </html>
