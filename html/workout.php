@@ -38,6 +38,8 @@ if ($result_goals->num_rows > 0) {
         $goals[] = $row;
     }
 }
+
+$db->close()
 ?>
 
     <header class="header-main">
@@ -46,14 +48,14 @@ if ($result_goals->num_rows > 0) {
             <nav class="navbar">
                 <ul>
                     <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
-                    <li><a href="http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/voeding.html">voeding</a></li>
                     <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
                 </ul>
             </nav>
         </div>
         <div class="winkelmand">
             <a href="winkelmand.html"><div class="winkelmand-icon"></div></a>
-            <a href="inlog.php"><div class="winkelmand-avatar"></div></a>
+            <a href="../inlog.php"><div class="winkelmand-avatar"></div></a>
         </div>
     </header>
 

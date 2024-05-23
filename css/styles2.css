@@ -1,0 +1,462 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.comment-section {
+    width: 89%;
+    margin: 40px auto;
+    margin-left: 120px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    background-color: #ece3e3;
+}
+
+#comment-form {
+    margin-bottom: 20px;
+}
+
+#comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #4cae4c;
+}
+
+.comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.comment h3 {
+    margin: 0 0 10px;
+}
+
+.comment .author {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.comment .content {
+    margin: 10px 0;
+}
+
+.comment button {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    background-color: #c9302c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 60px;
+    z-index: 10000;
+    background: black;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background: rgb(0, 0, 0);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+/* dit is het logo van de website (dubbel)*/
+.imglogo {
+    height: auto;
+    width: 60px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.footerbody {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ffffff;
+    background: #1b1919;
+    margin-top: 100px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .secoverons {
+    width: 40%;
+}
+
+footer .container .secoverons h2 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .secoverons h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 90px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container p {
+    color: #999;
+}
+
+footer .container .locatie h2 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .locatie h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: auto;
+    width: 70px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .locatie {
+    width: 40%;
+}
+/*hierdoor komt het tekst in het midden te staan*/
+.Dieten h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+/*hierdoor staat het tekst van dieten onder het hf*/
+.Dieten p {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+}
+/*het inleiding van keto zodat het aan de rechterkant van de scherm blijft*/
+.keto .crketo h2 {
+    margin-top: 30px;
+    margin-right: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.keto .crketo p {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+/*het foto hoort bij keto doordit staat het naast het inleinding aan de linkerkant*/
+.imgketo {
+    position: relative;
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 20%;
+    float: left;
+    margin-top: 20px;
+}
+/*zodat het aan de rechter kant blijft naast nadelen keto*/
+.voordelenketo {
+    margin-top: 15%;
+    margin-right: 5%;
+    width: 35%;
+    float: right;
+    position: relative;
+}
+
+.voordelenketo h3 {
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+/*het breedt van de tekst en dat het niet tegen de rand van de scherm is*/
+.nadelenketo {
+    width: 40%;
+    margin-left: 5%;
+}
+/*zodat het links van de scherm is*/
+.nadelenketo h3 {
+    margin-top: 38%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*zodat de voorbeelden naast elkaar komen te staan*/
+.vbketo .kleinetekst {
+    column-count: 2;
+    column-gap: 20px;
+    margin-left: 10%;
+}
+/*zodat het in het midden was van voorbeelden*/
+.vbketo h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/*het inleiding van intermittent fasting en hierdoor is het in het rechter kant van het scherm*/
+.inleidingif {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 70px;
+}
+/*zodat het kop in het midden is*/
+.inleidingif h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/*het afbeelding hier is het groote te veranderen en het zorgt er ook voor dat het aan de linkerkant is*/
+.imgif {
+    position: relative;
+    width: 25%;
+    height: 250px;
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 15%;
+    float: left;
+    margin-top: 20px;
+}
+/*zodat het recht van de scherm is*/
+.voordelenif {
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+    position: relative;
+}
+/*de kop is in het midden van de tekst*/
+.voordelenif h3 {
+    margin-bottom: 15px;
+}
+/*de breedte van de tekst en zodat het niet teveel aan de linker kant van de scherm zit*/
+.nadelenif {
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 6%;
+}
+/*zodat het wat hoger van de tekst afkomt*/
+.nadelenif h3 {
+    margin-bottom: 15px;
+}
+/*het breedte van de tekst en zodat het in het midden zit*/
+.inleidingzone {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 110px;
+}
+/*het kop van het tekst hierdoor is het in het midden en is het wat hoger dan het tekst*/
+.inleidingzone h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/*de breedte van de tekst en het laat het ook recht zitten*/
+.voordelenzone {
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+    position: relative;
+}
+/*het breedte en zodat het niet teveel aan de linker kant van de scherm zit*/
+.nadelenzone {
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+
+/* dit zorg ervooor dat de titel van workout in de center van het beeld staat.*/
+.work-out h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* dit zorg ervooor dat de text van workout in de center van het beeld staat.*/
+.work-out p {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* dit zorgt ervoor dat de titel van cardio trening aan de linker kant staat de text van cardio trening staat (onderelkaar)*/
+
+.cardio h2 {
+    margin-top: 100px;
+    margin-right: 19%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.cardio p {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+
+
+.kracht p {
+    width: 40%;
+    margin-left: 5%;
+}
+
+
+.kracht h3 {
+    margin-top: 15%;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: -20%;
+}
+
+
+
+.flexibiliteit p {
+    width: 40%;
+    margin-right: 5%;
+}
+
+
+.flexibiliteit h3 {
+    margin-right: -10%;
+    margin-top: 10%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.hiit p {
+    width: 40%;
+    margin-left: 5%;
+}
+
+
+.hiit h3 {
+    margin-left: -55%;
+    margin-top: 15%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.cardioimg {
+    float: left;
+    margin-left: 100px;
+
+}
+
+
+.krachtimg {
+    float: right;
+    margin-right: 10%;
+    margin-top: -5%;
+    width: 30%;
+}
+
+
+.yogaimg {
+    float: left;
+    margin-left: 15%;
+}
