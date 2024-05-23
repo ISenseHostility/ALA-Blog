@@ -1,9 +1,9 @@
 <?php
 // General settings
 $host = "localhost";
-$database = "silent_disco_zoetermeer";
+$database = "ala_blog";
 $user = "root";
-$password = "";
+$password = "root";
 
 $db = mysqli_connect($host, $user, $password, $database)
 or die("Error: " . mysqli_connect_error());

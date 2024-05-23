@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>international-sport</title>
     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/dannyheader.css">
 </head>
 
 <body>
-    <header>
-        <a href="../index.html" class="logo"><img class="imglogo" src="../img/logo.png" alt="logo"></a>
-        <ul>
-            <li><a href="workout.php">work-out</a></li>
-            <li><a href="../html/voeding.html">voeding</a></li>
-            <li><a href="../html/feedback.html">feedback</a></li>
-        </ul>
+    <header class="header-main">
+        <div class="logo">
+            <img src="../img/Logo.png" alt="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
+                    <li><a href="/http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="winkelmand">
+            <a href="winkelmand.html"><div class="winkelmand-icon"></div></a>
+            <a href="../inlog.php"><div class="winkelmand-avatar"></div></a>
+        </div>
     </header>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0)
-        })
-    </script>
+
     <!--dit is het inleiding van het pagina voeding -->
     <div class="tekst">
         <div class="Dieten">
@@ -210,23 +214,29 @@
             </div>
         </div>
 
+        <footer>
+            <div class="container">
+                <div class="secoverons">
+                    <h2>Over ons</h2>
+                    <p>Hallo allemaal, mijn naam is Mnr.Sport ik ga al 10+ jaar
+                        naar de sportschool en heb ook mijn eigen sportschool.
+                        Maar ik vond altijd dat er niet genoeg betrouwbare websites
+                        zijn voor mensen die naar de gym gaan. Daarom heb ik deze website laten maken.
+                        Voor iedereen die ernaar wilt kijken.
+                    </p>
+                </div>
+                <div class="locatie">
+                    <h2>locatie</h2>
+                    <p>Mijn gym heet: International-sport. je kan ons vinden bij Haarsteegsestraat 141 5254 JN.</p>
+                </div>
+            </div>
+        </footer>
 </body>
-<footer>
-    <div class="container">
-        <div class="secoverons">
-            <h2>Over ons</h2>
-            <p>Hallo allemaal, mijn naam is Mnr.Sport ik ga al 10+ jaar
-                naar de sportschool en heb ook mijn eigen sportschool.
-                Maar ik vond altijd dat er niet genoeg betrouwbare websites
-                zijn voor mensen die naar de gym gaan. Daarom heb ik deze website laten maken.
-                Voor iedereen die ernaar wilt kijken.
-            </p>
-        </div>
-        <div class="locatie">
-            <h2>locatie</h2>
-            <p>Mijn gym heet: International-sport. je kan ons vinden bij Haarsteegsestraat 141 5254 JN.</p>
-        </div>
-    </div>
-</footer>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+</script>
 
 </html>

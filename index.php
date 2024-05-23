@@ -16,9 +16,9 @@
             <img src="img/Logo.png" alt="logo">
             <nav class="navbar">
                 <ul>
-                    <li><a href="html/workout.html">work-out</a></li>
-                    <li><a href="html/voeding.html">voeding</a></li>
-                    <li><a href="html/feedback.html">feedback</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
                 </ul>
             </nav>
         </div>
