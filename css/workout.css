@@ -1,0 +1,220 @@
+.workout-wrapper {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 0;
+    font-family: Roboto, serif;
+    gap: 50px;
+}
+
+.workout-intro {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+    text-align: center;
+}
+
+.workout-articles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.workout-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 0;
+    background: #efefef;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.workout-article > img {
+    max-width: 500px;
+}
+
+.workout-article > div {
+    width: 500px;
+    text-align: center;
+}
+
+.workout-doelen-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.workout-doelen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 50px;
+    text-align: center;
+}
+
+.workout-doelen > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.workout-conclusie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40vw;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 60px;
+    z-index: 10000;
+    background: black;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background: rgb(0, 0, 0);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+/* dit is het logo van de website (dubbel)*/
+.imglogo {
+    height: auto;
+    width: 60px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.footerbody {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ffffff;
+    background: #1b1919;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .secoverons {
+    width: 40%;
+}
+
+footer .container .secoverons h2 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .secoverons h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 90px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container p {
+    color: #999;
+}
+
+footer .container .locatie h2 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .locatie h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: auto;
+    width: 70px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .locatie {
+    width: 40%;
+}
