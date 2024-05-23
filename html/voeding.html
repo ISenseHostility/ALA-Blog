@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>international-sport</title>
-    <link rel="stylesheet" href="../css/style2.css">
+    <title>Simple Comment System</title>
+    <link rel="stylesheet" href="../css/styles2.css">
     <link rel="stylesheet" href="../css/dannyheader.css">
 </head>
-
 <body>
-    <header class="header-main">
-        <div class="logo">
-            <img src="../img/Logo.png" alt="logo">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
-                    <li><a href="/http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
-                    <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="winkelmand">
-            <a href="winkelmand.html"><div class="winkelmand-icon"></div></a>
-            <a href="../inlog.php"><div class="winkelmand-avatar"></div></a>
-        </div>
-    </header>
-
+<header class="header-main">
+    <div class="logo">
+        <img src="../img/Logo.png" alt="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
+                <li><a href="http://localhost/ALA-Blog/html/voeding.html">voeding</a></li>
+                <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="winkelmand">
+        <a href="winkelmand.html"><div class="winkelmand-icon"></div></a>
+        <a href="../inlog.php"><div class="winkelmand-avatar"></div></a>
+    </div>
+</header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
     <!--dit is het inleiding van het pagina voeding -->
     <div class="tekst">
         <div class="Dieten">
@@ -213,30 +216,47 @@
                 </p>
             </div>
         </div>
-
-        <footer>
-            <div class="container">
-                <div class="secoverons">
-                    <h2>Over ons</h2>
-                    <p>Hallo allemaal, mijn naam is Mnr.Sport ik ga al 10+ jaar
-                        naar de sportschool en heb ook mijn eigen sportschool.
-                        Maar ik vond altijd dat er niet genoeg betrouwbare websites
-                        zijn voor mensen die naar de gym gaan. Daarom heb ik deze website laten maken.
-                        Voor iedereen die ernaar wilt kijken.
-                    </p>
-                </div>
-                <div class="locatie">
-                    <h2>locatie</h2>
-                    <p>Mijn gym heet: International-sport. je kan ons vinden bij Haarsteegsestraat 141 5254 JN.</p>
-                </div>
-            </div>
-        </footer>
+        <div class="comment-section">
+            <h2>Share your thoughts</h2>
+            <form id="comment-form">
+                <input type="text" id="title" placeholder="Title" required><br>
+                <input type="text" id="author" placeholder="Author" required><br>
+                <textarea id="content" placeholder="Comment" required></textarea><br>
+                <button type="submit">Post</button>
+            </form>
+            <div id="comments-container"></div>
+        </div>
+        <script src="../script.js"></script>
+        <script>
+            // Fetch comments using AJAX
+            window.onload = function() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '../get_comments.php', true);
+                xhr.onload = function() {
+                    if (xhr.status == 200) {
+                        document.getElementById('comments-container').innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            };
+        </script>
+    </div>
 </body>
-<script type="text/javascript">
-    window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0)
-    })
-</script>
-
+<footer>
+    <div class="container">
+        <div class="secoverons">
+            <h2>Over ons</h2>
+            <p>Hallo allemaal, mijn naam is Mnr.Sport ik ga al 10+ jaar
+                naar de sportschool en heb ook mijn eigen sportschool.
+                Maar ik vond altijd dat er niet genoeg betrouwbare websites
+                zijn voor mensen die naar de gym gaan. Daarom heb ik deze website laten maken.
+                Voor iedereen die ernaar wilt kijken.
+            </p>
+        </div>
+        <div class="locatie">
+            <h2>locatie</h2>
+            <p>Mijn gym heet: International-sport. je kan ons vinden bij Haarsteegsestraat 141 5254 JN.</p>
+        </div>
+    </div>
+</footer>
 </html>

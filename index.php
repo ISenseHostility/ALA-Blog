@@ -17,7 +17,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
-                    <li><a href="http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/voeding.html">voeding</a></li>
                     <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
                 </ul>
             </nav>
