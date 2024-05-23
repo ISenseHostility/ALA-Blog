@@ -1,4 +1,4 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,52 +7,7 @@
 body {
     background: #ffffff;
 }
-/*het zwarte achter grond voor het header*/
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 20px 60px;
-    z-index: 10000;
-}
-/*als je scrolt is het navbar dit*/
-header.sticky {
-    padding: 10px 100px;
-    background: rgb(0, 0, 0);
-}
 
-/*het groote van het logo*/
-.imglogo {
-    height: auto;
-    width: 60px;
-}
-/*hierdoor zijn ze niet onder elkaar in het navbar zijn*/
-header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*zodat er geen puntjes naast staan*/
-header ul li {
-    position: relative;
-    list-style: none;
-}
-/*dit is het opmaak van het links zelf*/
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-}
 /* het achtergrond van de landing page en ook het groote*/
 .banner {
     position: absolute;

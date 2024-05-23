@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>international-sport </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dannyheader.css">
 </head>
 
 <body>
     <!-- dit is voor de navbar-->
-    <header>
-        <a href="index.html" class="logo"><img class="imglogo" src="img/logo.png" alt="logo"></a>
-        <ul>
-            <li><a href="html/workout.php">work-out</a></li>
-            <li><a href="html/voeding.html">voeding</a></li>
-            <li><a href="html/feedback.html">feedback</a></li>
-        </ul>
+    <header class="header-main">
+        <div class="logo">
+            <img src="img/Logo.png" alt="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://localhost/ALA-Blog/html/workout.php">work-out</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/voeding.php">voeding</a></li>
+                    <li><a href="http://localhost/ALA-Blog/html/feedback.php">feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="winkelmand">
+            <a href="winkelmand.html"><div class="winkelmand-icon"></div></a>
+            <a href="inlog.php"><div class="winkelmand-avatar"></div></a>
+        </div>
     </header>
     <!--dit is de inleiding en achtergrond van de landing page-->
     <div class="container-inleiding">
